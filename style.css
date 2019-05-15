@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Damion');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+* {
+	margin: 0 auto;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.fn-font {
+	font-family: 'Roboto Slab', serif;
+}
+
+.fs-font {
+	font-family: 'Damion', cursive;
+}
+
+.fm-font {
+	font-family: 'Roboto Slab', serif;
+	font-weight: 200;
+}
+
+.bg-color {
+	color:#f8f9fa;
+}
+
+.container {
+	position: relative;
+	z-index: 10;
+}
+
+.site-wrap {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	overflow: hidden;
+}
+
+.top-banner {
+	background: url(img/band_bg.jpg) 0 0 no-repeat fixed;
+	text-align: center;
+	background-size: cover;
+	height: 969px;
+	width: 100%;
+	display: table;
+}
+
+.banner-head {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	margin-bottom: 0;
+	color: white;
+	text-shadow: 0 1px 1px black;
+}
+
+.banner-head h1 {
+	font-size: 6em;
+	font-weight: 600;
+	padding: 1rem;
+}
+
+.banner-head p {
+	font-size: 3rem;
+}
+
+@media (min-width: 768px) {
+	.site-section {
+		padding: 7em 0;
+	}
+}
+
+.site-section {
+	padding: 5em 0;
+}
+
+.section-heading h2 {
+	position: relative;
+	display: inline-block;
+	font-size: 40px;
+}
+
+.section-heading h2:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	height: 1px;
+	background: #000;
+	left: 0;
+	transform: translateX(-50%);
+}
+
+.section-heading h2:before {
+	width: 100px;
+	bottom: -10px;
+	left: 50%;
+}
+
+.section-heading.text-left h2:before {
+	left: 0;
+	transform: translateX(0%);
+}
+
+.competition-img {
+	background: #fff;
+}
+
+.competition-img .heading {
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.competition-img .heading a {
+	color: #000;
+}
+
+.competition-img .competition-img-body {
+	padding: 30px;
+}
+
+.competition-img .competition-img-body .date {
+	color: #5c7893;
+	font-weight: 400;
+}
+
+.competition-img>.thumbnail {
+	overflow: hidden;
+	position: relative;
+}
+
+.competition-img>.thumbnail img {
+	transition: .3s all ease;
+	transform: scale(1);
+}
+
+.competition-img:hover {
+	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.competition-img:hover img {
+	transform: translateY(-3px);
+	box-shadow: 0px 15px 40px 0px rgba(0,0,0,.3);
+	cursor: pointer;
+}
+
+.img-border {
+	position: relative;
+}
+
+.img-border img {
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+.image-absolute {
+	position: absolute;
+	width: 60%;
+	right: -50px;
+	border: 7px solid #fff;
+	z-index: 9;
+	bottom: -50px;
+}
+
+.item:hover i {
+	transition: .3s all ease;
+	transform: scale(1.2);
+}
+
+.bottom-banner {
+	background: url(img/bottom-banner.jpg) 0 0 no-repeat fixed;
+	top: 200px;
+	background-size: cover;
+	height: 300px;
+	width: 100%;
+	display: table;
+}
+
+.bottom-banner {
+	text-align: center;
+	padding: 4em;
+}
+
+.bottom-banner p {
+	margin-top: 10px;
+	font-size: 20px;
+}
+
+footer {
+	background-color: #222;
+	color: #ededed;
+	margin-top: 100px;
+}
+
+footer .container {
+	height: 400px;
+	width: 1140px;
+}
+
+footer .bar {
+	width: 800px;
+	height: 1px;
+	background-color: #fff;
+}
+
+footer .icon-space{
+	border-radius: 40px;
+	border: 1px solid #fff;
+	width: 40px;
+	height: 40px;
+}
+
+footer .icon-space:hover{
+	transform: scale(1.3);
+	transition: 0.3s all ease;
+}
+
+footer .icon-space i{
+	margin-top: 10px;
+	font-size: 20px;
+}
+
+footer .textBox1 {
+	font-size: 30px;
+}
+
+footer .textBox2,
+footer .textBox3 {
+	color: #d3d3d3;
+}
+
+footer .textBox2 p:hover,
+footer .textBox3 p:hover {
+	color: #fff;
+}
